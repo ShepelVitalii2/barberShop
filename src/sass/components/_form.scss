@@ -1,0 +1,136 @@
+.footer-form {
+  padding: 84px 31px;
+  @media screen and (min-width: $tablet) {
+    padding: 100px 39px 100px 39px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 52%;
+    padding: 130px 35px 193px 55px;
+  }
+}
+
+// заголовок формы "онлайн-запись"
+
+.form-caption {
+  margin-bottom: 44px;
+
+  // font-family: Raleway; Переопределение шрифтов
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: none;
+
+  color: $primary-bg-color;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+// секция имя и телефон
+
+.form-section {
+  margin-bottom: 44px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+}
+
+.form-label {
+  display: block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  margin-bottom: 44px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: 330px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 250px;
+  }
+
+  &:focus-within .form-text {
+    color: $primary-bg-color;
+    transition: $animation;
+  }
+
+  &:focus-within {
+    border-bottom: 1px solid $primary-bg-color;
+    transition: $animation;
+  }
+}
+@media screen and (min-width: $tablet) {
+  .form-label:first-child {
+    margin-right: 25px;
+  }
+}
+
+// поля для ввода имени и телефона
+
+.form-field {
+  border: none;
+  background-color: transparent;
+  color: $primary-bg-color;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+//  блок сообщение
+
+.message {
+  display: block;
+
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 540px;
+  }
+
+  &:focus-within .message-text {
+    color: $primary-bg-color;
+    transition: $animation;
+  }
+
+  &:focus-within {
+    border-bottom: 1px solid $primary-bg-color;
+    transition: $animation;
+  }
+}
+
+// поле для ввода сообщения
+
+.message-field {
+  width: 100%;
+  padding-top: 60px;
+  border: none;
+  background-color: transparent;
+  color: $primary-bg-color;
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 35px;
+  }
+}
+// расположение кнопки "отправить"
+
+.button-send {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}

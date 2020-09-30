@@ -1,0 +1,339 @@
+// собираю футер
+
+//Собрал футер в секцию, переопределение
+.footer {
+  padding: 0px;
+}
+
+.page-footer {
+  background-color: #191c26;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.footer-contacts {
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  background-color: #191c26;
+  background-image: url(../images/footer/footer-mob-x1.png);
+
+  // background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+
+  // @media screen and (min-width: $mobile) and (max-width: 767px){
+  //   background-size: cover;
+  //   max-width: 100%;
+  // }
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    // max-width: 768px;
+    max-width: 100%;
+    background-image: url(../images/footer/footer-tab-x1.png);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1200px;
+    padding: 130px 105px 130px 100px;
+    // padding-left: 100px;
+    // padding-right: 105px;
+    background-image: url(../images/footer/footer-desk-x1.png);
+    display: flex;
+    flex-direction: column;
+    width: 625px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 48%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .footer-contacts {
+    background-image: url('../images/footer/footer-mob-x2.png');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  .footer-contacts {
+    background-image: url('../images/footer/footer-mob-x3.png');
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  @media screen and (min-width: $tablet) {
+    .footer-contacts {
+      background-image: url('../images/footer/footer-tab-x2.png');
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  @media screen and (min-width: $tablet) {
+    .footer-contacts {
+      background-image: url('../images/footer/footer-tab-x3.png');
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  @media screen and (min-width: $desktop) {
+    .footer-contacts {
+      background-image: url('../images/footer/footer-desk-x2.png');
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3),
+  screen and (min-resolution: 288dpi),
+  screen and (min-resolution: 3dppx) {
+  @media screen and (min-width: $desktop) {
+    .footer-contacts {
+      background-image: url('../images/footer/footer-desk-x3.png');
+    }
+  }
+}
+
+.footer-header {
+  padding-bottom: 40px;
+
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: $primary-bg-color;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: $price-text-color;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+}
+
+.footer-svg {
+  display: block;
+  align-self: end;
+  margin-top: 5px;
+  margin-right: 16px;
+
+  fill: currentColor;
+  min-width: 24px;
+  height: 24px;
+}
+
+.footer-address,
+.footer-tel,
+.footer-mail {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.footer-address {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 250px;
+  }
+}
+
+.footer-tel {
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.footer-mail {
+  text-decoration: underline;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 70px;
+  }
+}
+
+.footer-mail,
+.footer-tel {
+  color: $price-text-color;
+}
+
+.working-container {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    // margin-top: 16%;
+    margin-left: 150px;
+
+    margin-top: 90px;
+  }
+}
+
+.working-time {
+  color: $primary-bg-color;
+  padding-bottom: 20px;
+}
+
+.working-time::before {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background: rgba(157, 164, 189, 0.6);
+}
+
+.working-hours {
+  margin: 0px;
+  font-size: 18px;
+}
+
+.footer-socials,
+.copyright {
+  display: inline-flex;
+
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.footer-socials {
+  // display: inline-flex;
+  // justify-content: space-around;
+  display: inline-flex;
+  margin-left: auto;
+
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+}
+
+.footer-items {
+  list-style: none;
+
+  &:nth-child(-n + 1) {
+    margin-right: 40px;
+  }
+
+  & a:hover,
+  & a:focus {
+    color: $accent-bg-color;
+    cursor: pointer;
+    transition: $animation;
+  }
+}
+
+.item-soc {
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+.youtube {
+  margin-right: auto;
+}
+
+.footer-third {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  // width: auto;
+  padding: 44px 31px;
+
+  @media screen and (max-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.footer-line {
+  display: inline-flex;
+  // margin-left: auto;
+  width: auto;
+}
+
+.footer-line::before {
+  content: '';
+  display: inline-block;
+  margin-right: 40px;
+
+  margin-top: 7px;
+  width: 60px;
+  height: 1px;
+
+  background: $primary-text-color;
+}
+
+.copyright {
+  display: inline-flex;
+
+  align-self: flex-end;
+  // margin-right: auto;
+
+  padding-right: 21px;
+  font-family: Open Sans;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 35px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: inline-block;
+    justify-self: center;
+  }
+}
+
+.test-third-footer {
+  display: flex;
+  // justify-content: space-between;
+}
+
+.test-footer-socials {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.test-copyright {
+  margin-right: auto;
+}

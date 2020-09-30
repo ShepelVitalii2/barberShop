@@ -1,0 +1,86 @@
+.general-content {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.about-us .images-list {
+  display: none;
+
+  margin-right: 30px;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    flex-basis: calc((100%-30px) / 2);
+  }
+  @media screen and (max-width: 1199px) {
+    &-item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 570px;
+    margin-right: 64px;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.about-us-content {
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100%-30px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    min-width: 500px;
+  }
+}
+
+.about-us-title {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+  color: $primary-text-color;
+  text-align: center;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 60px;
+    margin-right: 20px;
+
+    background: $primary-text-color;
+  }
+}
+.about-us-description {
+  margin-bottom: 20px;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+.about-us-text {
+  color: $secondary-text-color;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.about-us-details {
+  font-size: 14px;
+  line-height: 1.86;
+  margin-bottom: 40px;
+  color: $secondary-text-color;
+}

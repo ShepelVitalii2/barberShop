@@ -1,0 +1,175 @@
+.old-school .container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.old-school .content {
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    order: 2;
+  }
+}
+
+.old-school .content-title {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 20px;
+  color: $primary-text-color;
+  text-align: center;
+
+  &::before {
+    content: '';
+
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+
+    background-color: $primary-text-color;
+  }
+}
+
+.old-school .content-description {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  color: $primary-text-color;
+}
+.old-school .text {
+  font-size: 18px;
+  line-height: 1.67;
+
+  color: #555555;
+
+  margin-bottom: 44px;
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+  }
+}
+
+.old-school .progress {
+  position: relative;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 450px;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 370px;
+    margin: 0;
+  }
+}
+
+.old-school .feature {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 331px;
+}
+.old-school .item {
+  background-color: #f7f7f7;
+  width: calc((100% - 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  min-height: 133px;
+
+  padding: 0 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 133px;
+
+  @media screen and (min-width: $desktop) {
+    &:hover,
+    &:focus {
+      transition: $animation;
+      background-color: $primary-text-color;
+      color: white;
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  &:nth-child(2) {
+    margin-top: 35px;
+  }
+  &:nth-child(3) {
+    margin-top: -35px;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: $tablet) {
+    padding: 0 44px;
+
+    &:nth-child(4) {
+      padding: 0 39px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0 24px;
+
+    &:nth-child(4) {
+      padding: 0 19px;
+    }
+  }
+}
+
+.old-school .index {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 6px;
+  padding: 0;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  position: relative;
+}
+.old-school .plus {
+  color: $accent-bg-color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+
+  position: absolute;
+  top: 5%;
+  right: -11px;
+}
+
+.old-school .description {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+
+  color: $primary-text-color;
+
+  margin: 0;
+  padding: 0;
+  @media screen and (min-width: $desktop) {
+    color: currentColor;
+    margin: 0;
+  }
+}
